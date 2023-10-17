@@ -1,0 +1,97 @@
+@import "./src/scss/vars.scss";
+
+.body {
+  background-color: $grayMeddle;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+
+.InputEmail, .InputPassword {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 10px;
+
+
+  svg {
+    padding: 5px;
+    width: 30px;
+    height: 100%;
+    background-color: $grayLight;
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.submitBlock {
+  display: flex;
+  align-items: center;
+  background-color: $grayLight;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 30px;
+
+  .save {
+    display: flex;
+    align-items: center;
+
+    input {
+      margin-right: 5px;
+      height: 12px;
+    }
+
+    .textBox {
+      color: $white;
+      font-size: 18px;
+    }
+
+  }
+}
+
+.checkBox {
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  position: relative;
+  margin-right: 5px;
+}
+
+.checked {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+}
